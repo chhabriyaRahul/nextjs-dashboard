@@ -1,0 +1,25 @@
+You may opt out of telmetry running this in the root of your project directory:
+pnpm exec next telemetry disable
+
+To check status:
+pnpm exec next telemetry status
+
+To enable:
+pnpm exec next telemetry enable
+
+
+Link: https://nextjs.org/telemetry
+
+
+We track general usage information, such as Next.js plugins and build performance. Specifically, we track the following anonymously:
+
+Command invoked (next build, next dev, or next export)
+Version of Next.js
+General machine information (e.g. number of CPUs, macOS/Windows/Linux, whether or not the command was run within CI)
+What Next.js plugins are present in your project
+Duration of next build and size of application (total number of pages)
+Note: This list is regularly audited to ensure its accuracy.
+
+You can view exactly what is being collected by setting the following environment variable: NEXT_TELEMETRY_DEBUG=1.
+
+When this environment variable is set, data will not be sent to us. The data will only be printed out to the stderr stream, prefixed with [telemetry].
